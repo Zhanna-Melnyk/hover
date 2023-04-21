@@ -1,0 +1,40 @@
+.cell {
+	width: 40px;
+	height: 40px;
+	border-left: 2px;
+	border-bottom: 0;
+	border-top: 2px;
+	border-right: 0;
+	border-style: solid;
+	border-color: #444;
+	background-color: var(--backgroundColor);
+}
+
+.field5:nth-child(5n) {
+	border-right: 2px solid #444;
+}
+
+.field5:nth-last-child(-n + 5) {
+	border-bottom: 2px solid #444;
+}
+
+.field10:nth-child(10n) {
+	border-right: 2px solid #444;
+}
+
+.field10:nth-last-child(-n + 10) {
+	border-bottom: 2px solid #444;
+}
+
+.field15 {
+	width: 25px;
+	height: 25px;
+
+	&:nth-child(15n) {
+		border-right: 2px solid #444;
+	}
+
+	&:nth-last-child(-n + 15) {
+		border-bottom: 2px solid #444;
+	}
+}

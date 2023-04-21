@@ -1,0 +1,5 @@
+.field {
+	grid-row-start: 2;
+	display: grid;
+	grid-template-columns: repeat(var(--colAmount), max-content);
+}

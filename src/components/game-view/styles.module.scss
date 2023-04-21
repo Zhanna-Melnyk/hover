@@ -1,0 +1,32 @@
+.container {
+	display: grid;
+	grid-template-columns: 65% 35%;
+	padding: 20px;
+
+	.pickModeBlock {
+		display: grid;
+		grid-template-columns: 72% 3% 25%;
+		margin-bottom: 10px;
+
+		& div {
+			border-width: 2px;
+			border-radius: 0;
+			border-color: #444;
+		}
+
+		.startBtn {
+			grid-column-start: 3;
+			background-color: #106cc6;
+			color: white;
+			font-size: 20px;
+			border: none;
+			border-radius: 7px;
+			cursor: pointer;
+
+			&:disabled {
+				cursor: auto;
+				background-color: #3e5a76;
+			}
+		}
+	}
+}
